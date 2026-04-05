@@ -1,0 +1,199 @@
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width : 100%;
+padding:18px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* LOGO */
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#4caf50;
+}
+
+/* RIGHT SECTION */
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+/* LINKS */
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:28px;
+}
+.nav-item.active{
+color:#4caf50;
+font-weight:600;
+}
+
+.nav-item.active::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:100%;
+height:2px;
+background:#4caf50;
+border-radius:2px;
+}
+
+
+/* NAV ITEM */
+
+.nav-item{
+text-decoration:none;
+color:#333;
+font-weight:500;
+cursor:pointer;
+position:relative;
+transition:0.25s;
+}
+
+.nav-item::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#4caf50;
+transition:0.3s;
+}
+
+.nav-item:hover::after{
+width:100%;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+position:relative;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown-menu{
+
+position:absolute;
+top:32px;
+left:0;
+
+background:white;
+
+padding:10px 0;
+
+border-radius:8px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+display:flex;
+flex-direction:column;
+
+min-width:200px;
+}
+
+/* DROPDOWN ITEMS */
+
+.dropdown-menu a{
+padding:10px 20px;
+text-decoration:none;
+color:#333;
+transition:0.2s;
+}
+
+.dropdown-menu a:hover{
+background:#f5f5f5;
+color:#4caf50;
+}
+
+/* DARK TOGGLE */
+
+.dark-toggle{
+
+border:none;
+background:#f1f1f1;
+
+padding:8px 10px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+transition:0.2s;
+}
+
+.dark-toggle:hover{
+background:#e0e0e0;
+}
+
+/* USER ICON */
+
+.user-icon{
+display:flex;
+align-items:center;
+cursor:pointer;
+color:#444;
+transition:0.2s;
+}
+
+.user-icon:hover{
+color:#4caf50;
+}
+
+/* DARK MODE */
+
+body.dark .navbar{
+background:#1f1f1f;
+}
+
+body.dark .nav-item{
+color:#ddd;
+}
+
+body.dark .nav-item:hover{
+color:#4caf50;
+}
+
+body.dark .dropdown-menu{
+background:#2a2a2a;
+}
+
+body.dark .dropdown-menu a{
+color:#ddd;
+}
+
+body.dark .dropdown-menu a:hover{
+background:#3a3a3a;
+}
+
+body.dark .dark-toggle{
+background:#2a2a2a;
+color:white;
+}
+
+body.dark .dark-toggle:hover{
+background:#3a3a3a;
+}
+
+body.dark .user-icon{
+color:#ddd;
+}

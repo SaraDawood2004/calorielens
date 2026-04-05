@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* full page background */
+
+.splash-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+  linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1490818387583-1baba5e638af");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.splash-card {
+
+  padding: 55px 75px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,0.15);
+
+  text-align: center;
+
+  animation: fadeIn 1.2s ease;
+}
+
+/* title */
+
+.brand-title {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2c3e50;
+}
+
+/* subtitle */
+
+.brand-subtitle {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #5f6c7b;
+}
+
+/* modern pulse loader */
+
+.pulse-loader {
+  margin: 40px auto 0;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+  background: #3aa655;
+
+  animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(3);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
