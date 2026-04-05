@@ -1,4 +1,5 @@
-## **CalorieLens — AI-Powered Nutrition Intelligence Platform**
+
+**CalorieLens — AI-Powered Nutrition Intelligence Platform**
 
 
 ## Project Overview
