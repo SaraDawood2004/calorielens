@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pkl
+
+# ML Models (optional - if large)
+*.pth
+
+# Uploads (IMPORTANT)
+backend/uploads/
+
+# Node
+node_modules/
+build/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
